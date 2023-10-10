@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:mobile_and_laptop_store/data/stripe_keys.dart';
 import 'package:mobile_and_laptop_store/manger/cubit_products/cubit_products_cubit.dart';
 
 import 'package:mobile_and_laptop_store/splash_screen.dart';
@@ -8,6 +10,7 @@ import 'core/colors.dart';
 import 'manger/cubit_navbar/navigationbarcubit_cubit.dart';
 
 void main() {
+  Stripe.publishableKey= ApiKeys.publishableKey;
   runApp(const MyApp());
 }
 

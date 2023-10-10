@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_and_laptop_store/core/styles.dart';
 import 'package:mobile_and_laptop_store/presentation/view/home_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import 'core/colors.dart';
 
 class PgViewModel2 {
   final String image;
@@ -112,13 +110,13 @@ class _PgViewState extends State<PgView> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
-                height: 420,
+                height: 400,
                 width: double.infinity,
                 decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(40),
-                      topRight: Radius.circular(40),
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
                     )),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../core/colors.dart';
 import '../../core/styles.dart';
-import '../../manger/cubit_products/cubit_products_cubit.dart';
 
 class DeletList extends StatelessWidget {
   const DeletList(

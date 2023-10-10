@@ -7,7 +7,6 @@ import '../../presentation/view/compani.dart';
 import '../../presentation/view/home_body.dart';
 import '../../presentation/view/info.dart';
 import '../../presentation/view/lieks.dart';
-import '../../presentation/widgets/favorite_list.dart';
 
 part 'navigationbarcubit_state.dart';
 

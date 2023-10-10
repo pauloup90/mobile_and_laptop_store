@@ -1,5 +1,3 @@
-import 'package:another_carousel_pro/another_carousel_pro.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DetilsScreen extends StatelessWidget {
@@ -14,10 +12,10 @@ class DetilsScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Container(
+          SizedBox(
 
 
               height: 270.0,

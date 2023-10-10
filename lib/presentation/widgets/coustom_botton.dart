@@ -1,9 +1,12 @@
+
 import 'package:flutter/material.dart';
 import 'package:mobile_and_laptop_store/core/colors.dart';
 
-class CustomBottom extends StatelessWidget {
-  const CustomBottom({super.key});
+import '../stripepayment/payment_manager.dart';
 
+class CustomBottom extends StatelessWidget {
+  const CustomBottom({super.key, required this.price});
+  final price;
   @override
   Widget build(BuildContext context) {
     return  Row(
@@ -30,11 +33,14 @@ class CustomBottom extends StatelessWidget {
           width:160 ,
           decoration: BoxDecoration(
 
-              color: Colors.black,
-              borderRadius: BorderRadius.circular(12)),
+              borderRadius: BorderRadius.circular(20)),
 
-          child: GestureDetector(
-           onTap: (){},
+          child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.black, // background
+
+              ),
+           onPressed: ()=> PpaymentManager.makePayment(price, 'EGP'),
             child: Center(child: Text('Buying',style: TextStyle(color: Colors.white),))
 
           ),

@@ -3,8 +3,6 @@ import 'package:mobile_and_laptop_store/presentation/view/home_screen.dart';
 import 'package:mobile_and_laptop_store/presentation/widgets/gridview.dart';
 
 import '../../core/styles.dart';
-import '../view/home_body.dart';
-import 'compani_liest.dart';
 
 class AboutCompany extends StatelessWidget {
   const AboutCompany({super.key});
@@ -16,23 +14,24 @@ class AboutCompany extends StatelessWidget {
         child: SafeArea(
           child: Scaffold(
             body: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushReplacement(
+                      Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => HomeScreen()));
+                              builder: (context) => const HomeScreen()));
                     },
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 20.0, top: 20),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 20.0, top: 20),
                       child: Icon(Icons.arrow_back_sharp),
                     ),
                   ),
-                  Center(
-                    child: const CircleAvatar(
+                  const Center(
+                    child: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 40,
                       child: Image(
@@ -40,8 +39,8 @@ class AboutCompany extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Center(
-                    child: const Text('xcite', style: Styles.Medium),
+                  const Center(
+                    child: Text('xcite', style: Styles.Medium),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(top: 15, left: 30.0, right: 15),
@@ -88,15 +87,15 @@ class AboutCompany extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding:
-                        const EdgeInsets.only(left: 20.0, top: 20, bottom: 10),
-                    child: const Text(' products', style: Styles.Smoll),
+                        EdgeInsets.only(left: 20.0, top: 20, bottom: 10),
+                    child: Text(' products', style: Styles.Smoll),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  TabBar(
+                  const TabBar(
                     indicatorWeight: 1,
                     indicatorColor: Colors.white,
                     enableFeedback: false,
@@ -112,10 +111,10 @@ class AboutCompany extends StatelessWidget {
                       Text('Camera', style: Styles.meni),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
-                  GridViewItems(),
+                  const GridViewItems(),
                 ],
               ),
             ),

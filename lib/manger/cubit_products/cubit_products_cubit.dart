@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
@@ -6,7 +5,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 
 import '../../data/products_model.dart';
-import '../../generated/bas_api.dart';
 
 part 'cubit_products_state.dart';
 

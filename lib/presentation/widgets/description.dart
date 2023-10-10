@@ -24,19 +24,14 @@ class Description extends StatelessWidget {
             ),
           ],
         ),
-        Container(
-          margin: const EdgeInsets.only(left: 20, top: 10, bottom: 10),
-          width: 300,
+        Text(
+          description ,
 
-          child: Text(
-            description ,
-            maxLines: 5,
-            overflow: TextOverflow.ellipsis,
-            style: Styles.meni2.copyWith(
-                color: Colors.grey, fontWeight: FontWeight.w700,
-                fontSize: 10),
 
-          ),
+          style: Styles.meni2.copyWith(
+              color: Colors.grey, fontWeight: FontWeight.w700,
+              fontSize: 10),
+
         ),
       ],
     );

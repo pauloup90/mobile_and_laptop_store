@@ -54,7 +54,7 @@ class GridViewItems extends StatelessWidget {
               itemBuilder: (context, index) {
                 return GestureDetector(
                     onTap: () {
-                      Navigator.pushReplacement(
+                      Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => DetilsHome(

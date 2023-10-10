@@ -35,8 +35,12 @@ class DetilsHome extends StatelessWidget {
                 width: double.infinity,
                 color: Colors.white,
                 child: Center(
-                  child: DetilsScreen(
-                    image: image,
+                  child: InteractiveViewer(
+                    maxScale: 2.5,
+
+                  minScale: 1,  child: DetilsScreen(
+                      image: image,
+                    ),
                   ),
                 ),
               ),
@@ -48,19 +52,27 @@ class DetilsHome extends StatelessWidget {
             title: title,
           ),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
-          Description(
-            description: description,
+          SizedBox(
+            height: 200,
+            width: double.infinity,
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              padding:EdgeInsets.all(12) ,
+              child: Description(
+                description: description,
+              ),
+            ),
+          ),
+
+    Spacer(),
+           CustomBottom(
+            price: price,
           ),
           const SizedBox(
-            height: 10,
+            height: 30,
           ),
-          const ColorsBottomSheet(),
-          const SizedBox(
-            height: 40,
-          ),
-          const CustomBottom(),
         ],
       ),
     ));

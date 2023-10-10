@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mobile_and_laptop_store/presentation/view/home_screen.dart';
 
-import '../../manger/cubit_products/cubit_products_cubit.dart';
-import '../view/detils_home.dart';
 import 'gridview.dart';
-import 'items_sec_all.dart';
 
 class ViewAll extends StatelessWidget {
   const ViewAll({super.key});
